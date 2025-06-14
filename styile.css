@@ -1,0 +1,915 @@
+<<<<<<< HEAD
+
+        body {
+          background-color: rgb(11, 10, 10);
+        }
+        .navbar {
+          background-color: black !important;
+          padding: 10px 20px;
+        }
+        .navbar-brand img {
+          height: 70px;
+          object-fit: contain;
+        }
+        .navbar-nav {
+          margin-left: auto;
+        }
+        .nav-link {
+          color: white !important;
+          font-weight: bold;
+          font-size: 18px;
+          margin-right: 15px;
+        }
+        .nav-link:hover {
+          color: rgb(232, 21, 81) !important;
+        }
+        .navbar-toggler {
+          border-color: white !important; /* Makes the button border white */
+        }
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        }
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        display: none;
+    }
+}
+
+    /* -------------------------------- */
+    
+            section {
+              background-color: black;
+              color: white;
+              padding: 80px 0;
+            }
+          
+            .profile-photo {
+              width: 500px; /* Increased size */
+              height: 500px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin: 30px;
+              padding: 10px;
+              border: 5px solid white;
+              transition: transform 0.3s ease-in-out;
+            }
+          
+            .profile-photo:hover {
+              transform: scale(1.05);
+              border-color: red;
+            }
+          
+            h1 {
+              font-size: 50px; /* Increased size */
+              font-weight: bold;
+              transition: 0.3s ease-in-out;
+            }
+          
+            h1 span {
+              color: red;
+            }
+          
+            p {
+              font-size: 24px; /* Increased size */
+              transition: 0.3s ease-in-out;
+            }
+          
+            h1:hover, p:hover {
+              color: gray;
+              transform: scale(1.05);
+            }
+          
+            /* Media Query for Small to Medium Screens (Mobile Devices) */
+            @media (max-width: 768px) {
+              .profile-photo {
+                width: 400px; /* Smaller size for mobile */
+                height: 400px;
+              }
+          
+              h1 {
+                font-size: 35px; /* Smaller font size for mobile */
+              }
+          
+              p {
+                font-size: 20px; /* Smaller font size for paragraphs */
+              }
+            }
+          
+            /* Media Query for Very Small Screens (Extra Small Devices) */
+            @media (max-width: 576px) {
+              .profile-photo {
+                width: 200px; /* Further reduced size for very small screens (small phone) */
+                height: 200px;
+              }
+          
+              h1 {
+                font-size: 26px; /* Even smaller font size for very small screens */
+              }
+          
+              p {
+                font-size: 14px; /* Even smaller font size for very small screens */
+              }
+            }
+          /* --------------------------- */
+          
+          /* Default layout for larger screens */
+.d-flex {
+display: flex;
+justify-content: start;
+flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+.btn {
+margin-right: 10px; /* Space between buttons */
+}
+
+@media (max-width: 768px) {
+.d-flex {
+flex-direction: column; /* Stack buttons vertically on smaller screens */
+align-items: flex-start; /* Align the buttons to the start */
+}
+
+.btn {
+width: 100%; /* Make buttons take full width */
+margin-bottom: 10px; /* Add space between stacked buttons */
+}
+}
+
+/* ------------------------- */
+
+.portfolio {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.portfolio:hover {
+    background-color: #dc3545; /* Bootstrap red color */
+    color: white;
+}
+
+.accordion-button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #444444 !important;
+    color: #fff !important;
+}
+
+.accordion-item:hover {
+    background-color: #333333 !important;
+}
+
+/* Button customizations */
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-light {
+    border-color: #8fba2b;
+    color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.btn-outline-warning {
+    border-color: #ffc107;
+    color: #ffc107;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-outline-info {
+    border-color: #17a2b8;
+    color: #17a2b8;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+/* -----------------------
+ */
+
+
+    .services .card {
+        background-color: #222; /* Darker background for the cards */
+        color: white;
+        min-height: 320px; /* Ensure cards are of equal height */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+
+    .services .card .btn {
+        border-radius: 20px;
+    }
+
+    .services .fa {
+        color: white; /* Ensure icons are white or you can adjust based on the service */
+    }
+
+    /* Hover effect: Red background on hover */
+    .services .card:hover {
+        background-color: red !important;
+    }
+
+    /* Ensure two boxes are in one line for large screens */
+    @media (min-width: 992px) {
+        .col-lg-6 {
+            flex: 0 0 50%; /* 2 boxes per line on large screens */
+            max-width: 50%;
+        }
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .col-md-6 {
+            flex: 0 0 100%; /* 1 box per line on smaller screens */
+            max-width: 100%;
+        }
+    }
+
+
+    /* ------------------ */
+   
+    #portfolio {
+    background-color: #050505;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.work {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.layer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.layer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.layer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.work:hover {
+    transform: scale(1.05);
+}
+
+.work:hover .layer {
+    opacity: 1;
+    visibility: visible;
+}
+
+.see-more-link {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-link:hover {
+    background-color: red;
+    color: white;
+}
+
+/* ------------------------------------------------ */
+.contact {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    padding: 50px 0;
+}
+
+.contact-left {
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 48px; /* Increased font size for "Contact Me" */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white; /* Ensure the sub-title is white */
+    text-align: left; /* Align "Contact Me" to the left */
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white; /* Ensure all text is white */
+}
+
+.contact-left .social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 28px; /* Increased icon size */
+    text-decoration: none;
+}
+
+.contact-left .social-icons a:hover {
+    color: #4CAF50; /* Green on hover */
+}
+
+.contact-left .btn {
+    background-color: #f91d05; /* Red button */
+    border: none;
+    padding: 12px 25px; /* Adjust padding */
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Add some space between buttons */
+}
+
+.contact-left .btn:hover {
+    background-color: #f1230c;
+}
+
+.contact-right {
+    background-color: black; /* Set form background to black */
+    padding: 30px; /* Add more padding for spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-right input,
+.contact-right textarea {
+    background-color: #333; /* Slightly lighter background for form fields */
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px; /* More space between fields */
+    border-radius: 5px;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    outline: none;
+    border: 2px solid #4CAF50;
+}
+
+.contact-right button {
+    background-color: #ee1f08; /* Red submit button */
+    border: none;
+    padding: 15px 25px; /* Adjust padding */
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Add some space above button */
+}
+
+.contact-right button:hover {
+    background-color: #fa1900;
+}
+
+.copyright {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.copyright i {
+    color: #eb2610;
+}
+=======
+
+        body {
+          background-color: rgb(11, 10, 10);
+        }
+        .navbar {
+          background-color: black !important;
+          padding: 10px 20px;
+        }
+        .navbar-brand img {
+          height: 70px;
+          object-fit: contain;
+        }
+        .navbar-nav {
+          margin-left: auto;
+        }
+        .nav-link {
+          color: white !important;
+          font-weight: bold;
+          font-size: 18px;
+          margin-right: 15px;
+        }
+        .nav-link:hover {
+          color: rgb(232, 21, 81) !important;
+        }
+        .navbar-toggler {
+          border-color: white !important; /* Makes the button border white */
+        }
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+        }
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        display: none;
+    }
+}
+
+    /* -------------------------------- */
+    
+            section {
+              background-color: black;
+              color: white;
+              padding: 80px 0;
+            }
+          
+            .profile-photo {
+              width: 500px; /* Increased size */
+              height: 500px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin: 30px;
+              padding: 10px;
+              border: 5px solid white;
+              transition: transform 0.3s ease-in-out;
+            }
+          
+            .profile-photo:hover {
+              transform: scale(1.05);
+              border-color: red;
+            }
+          
+            h1 {
+              font-size: 50px; /* Increased size */
+              font-weight: bold;
+              transition: 0.3s ease-in-out;
+            }
+          
+            h1 span {
+              color: red;
+            }
+          
+            p {
+              font-size: 24px; /* Increased size */
+              transition: 0.3s ease-in-out;
+            }
+          
+            h1:hover, p:hover {
+              color: gray;
+              transform: scale(1.05);
+            }
+          
+            /* Media Query for Small to Medium Screens (Mobile Devices) */
+            @media (max-width: 768px) {
+              .profile-photo {
+                width: 400px; /* Smaller size for mobile */
+                height: 400px;
+              }
+          
+              h1 {
+                font-size: 35px; /* Smaller font size for mobile */
+              }
+          
+              p {
+                font-size: 20px; /* Smaller font size for paragraphs */
+              }
+            }
+          
+            /* Media Query for Very Small Screens (Extra Small Devices) */
+            @media (max-width: 576px) {
+              .profile-photo {
+                width: 200px; /* Further reduced size for very small screens (small phone) */
+                height: 200px;
+              }
+          
+              h1 {
+                font-size: 26px; /* Even smaller font size for very small screens */
+              }
+          
+              p {
+                font-size: 14px; /* Even smaller font size for very small screens */
+              }
+            }
+          /* --------------------------- */
+          
+          /* Default layout for larger screens */
+.d-flex {
+display: flex;
+justify-content: start;
+flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+.btn {
+margin-right: 10px; /* Space between buttons */
+}
+
+@media (max-width: 768px) {
+.d-flex {
+flex-direction: column; /* Stack buttons vertically on smaller screens */
+align-items: flex-start; /* Align the buttons to the start */
+}
+
+.btn {
+width: 100%; /* Make buttons take full width */
+margin-bottom: 10px; /* Add space between stacked buttons */
+}
+}
+
+/* ------------------------- */
+
+.portfolio {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.portfolio:hover {
+    background-color: #dc3545; /* Bootstrap red color */
+    color: white;
+}
+
+.accordion-button {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #444444 !important;
+    color: #fff !important;
+}
+
+.accordion-item:hover {
+    background-color: #333333 !important;
+}
+
+/* Button customizations */
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-light {
+    border-color: #8fba2b;
+    color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.btn-outline-warning {
+    border-color: #ffc107;
+    color: #ffc107;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.btn-outline-info {
+    border-color: #17a2b8;
+    color: #17a2b8;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+/* -----------------------
+ */
+
+
+    .services .card {
+        background-color: #222; /* Darker background for the cards */
+        color: white;
+        min-height: 320px; /* Ensure cards are of equal height */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+
+    .services .card .btn {
+        border-radius: 20px;
+    }
+
+    .services .fa {
+        color: white; /* Ensure icons are white or you can adjust based on the service */
+    }
+
+    /* Hover effect: Red background on hover */
+    .services .card:hover {
+        background-color: red !important;
+    }
+
+    /* Ensure two boxes are in one line for large screens */
+    @media (min-width: 992px) {
+        .col-lg-6 {
+            flex: 0 0 50%; /* 2 boxes per line on large screens */
+            max-width: 50%;
+        }
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .col-md-6 {
+            flex: 0 0 100%; /* 1 box per line on smaller screens */
+            max-width: 100%;
+        }
+    }
+
+
+    /* ------------------ */
+   
+    #portfolio {
+    background-color: #050505;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.work {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.layer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.layer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.layer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.work:hover {
+    transform: scale(1.05);
+}
+
+.work:hover .layer {
+    opacity: 1;
+    visibility: visible;
+}
+
+.see-more-link {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-link:hover {
+    background-color: red;
+    color: white;
+}
+
+/* ------------------------------------------------ */
+.contact {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    padding: 50px 0;
+}
+
+.contact-left {
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 48px; /* Increased font size for "Contact Me" */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white; /* Ensure the sub-title is white */
+    text-align: left; /* Align "Contact Me" to the left */
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white; /* Ensure all text is white */
+}
+
+.contact-left .social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 28px; /* Increased icon size */
+    text-decoration: none;
+}
+
+.contact-left .social-icons a:hover {
+    color: #4CAF50; /* Green on hover */
+}
+
+.contact-left .btn {
+    background-color: #f91d05; /* Red button */
+    border: none;
+    padding: 12px 25px; /* Adjust padding */
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Add some space between buttons */
+}
+
+.contact-left .btn:hover {
+    background-color: #f1230c;
+}
+
+.contact-right {
+    background-color: black; /* Set form background to black */
+    padding: 30px; /* Add more padding for spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-right input,
+.contact-right textarea {
+    background-color: #333; /* Slightly lighter background for form fields */
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px; /* More space between fields */
+    border-radius: 5px;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    outline: none;
+    border: 2px solid #4CAF50;
+}
+
+.contact-right button {
+    background-color: #ee1f08; /* Red submit button */
+    border: none;
+    padding: 15px 25px; /* Adjust padding */
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Add some space above button */
+}
+
+.contact-right button:hover {
+    background-color: #fa1900;
+}
+
+.copyright {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.copyright i {
+    color: #eb2610;
+}
+>>>>>>> 3c4534e7bd97215f93a4ec389f0cb51966357f00
