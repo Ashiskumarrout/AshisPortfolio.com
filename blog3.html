@@ -1,250 +1,296 @@
-<!-- Blog 3 Content -->
- <!doctype html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="Ashis_logo-removebg-preview1.png" type="image/x-icon">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Ashis_logo-removebg-preview1.png" type="image/x-icon">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/e6878467af.js" crossorigin="anonymous"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/e6878467af.js" crossorigin="anonymous"></script>
 
-    <!-- AOS Animation -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styile.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styile.css">
 
-    <style>
-      .navbar-logo {
-        width: 200px; /* Increased size */
-        height: auto;
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .navbar-logo {
+      width: 200px;
+      height: auto;
+    }
+
+    .navbar-brand img {
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .navbar {
+      background-color: #000;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #dc3545;
+      color: #fff;
+    }
+
+    .blog-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .custom-footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-family: sans-serif;
+    }
+
+    .custom-footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+    }
+
+    .footer-title {
+      color: #dc3545;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .footer-text {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 14px;
+    }
+
+    .footer-socials {
+      margin-bottom: 10px;
+    }
+
+    .footer-socials a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .footer-socials a:hover {
+      color: #dc3545;
+    }
+
+    /* Added spacing between header, content, and footer */
+    .spacer-after-header {
+      margin-top: 30px;
+    }
+
+    .spacer-before-footer {
+      margin-top: 50px;
+    }
+
+    /* Improved padding for content */
+    main.container {
+      padding: 50px 30px;
+      background-color: #111;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .custom-footer-container {
+        flex-direction: column;
+        text-align: center;
       }
-.navbar-brand img {
-    height:120px;
-    object-fit: contain;
-}
 
-.navbar {
-        background-color: #000; /* Black background */
+      .footer-section {
+        flex: 1 1 100%;
       }
-      .nav-link:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <!-- 🔷 Navbar -->
-    <nav class="navbar navbar-expand-lg bg-black shadow">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="Ashis_logo-removebg-preview1.png" alt="Logo" class="navbar-logo">
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-black shadow px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Ashis_logo-removebg-preview1.png" alt="Logo" class="navbar-logo">
+      </a>
+
+      <span class="d-none d-lg-flex align-items-center ms-3" style="font-size:1.3rem;">
+        <i class="fa-solid fa-phone me-2 text-success" style="font-size:1.5rem;"></i>
+        <a href="tel:7008448569" style="color:#fff; text-decoration:none; background:#000000; padding:8px 18px; border-radius:8px; font-size:1.3rem;">
+          7008448569
         </a>
-        <span class="d-none d-lg-flex align-items-center ms-3" style="font-size:1.3rem;">
-  <i class="fa-solid fa-phone me-2 text-success" style="font-size:1.5rem;"></i>
-  <a href="tel:7008448569" style="color:#fff; text-decoration:none; background:#000000; padding:8px 18px; border-radius:8px; font-size:1.3rem;">
-    7008448569
-  </a>
-</span>
+      </span>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active text-white" href="#home">Home</a>
-            <a class="nav-link text-white" href="#about">About</a>
-            <a class="nav-link text-white" href="#services">Services</a>
-            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
-            <a class="nav-link text-white" href="#contact">Contact</a>
-            <a class="nav-link text-white" href="#blogs">Blogs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav gap-2">
+          <a class="nav-link active text-white" href="http://ashistech.space/">Home</a>
+          <a class="nav-link text-white" href="http://ashistech.space/#about">About</a>
+          <a class="nav-link text-white" href="http://ashistech.space/#services">Services</a>
+          <a class="nav-link text-white" href="http://ashistech.space/#portfolio">Portfolio</a>
+          <a class="nav-link text-white" href="http://ashistech.space/#contact">Contact</a>
+
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="blogsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="blogsDropdown" style="min-width: 220px;">
+              <li><a class="dropdown-item text-white py-2" href="blog1.html">Build Portfolio Website</a></li>
+              <li><a class="dropdown-item text-white py-2" href="blog2.html">React vs Angular</a></li>
+              <li><a class="dropdown-item text-white py-2" href="blog3.html">First Developer Job</a></li>
+            </ul>
           </div>
+          <a class="nav-link text-white" href="#contact">Contact</a>
         </div>
       </div>
-    </nav>
-
-<main class="container" style="padding: 40px 20px;">
-  <!-- Blog: Tips for Landing Your First Developer Job -->
-<main class="container" style="padding: 40px 20px; background-color: #111; color: #fff; border-radius: 8px;">
-  
-  <h2 class="text-danger">Tips for Landing Your First Developer Job</h2>
-
-  <p><strong>I’m Ashis Kumar Rout</strong>, and this blog is based on my real-life journey. I faced a lot of rejections, confusion, and late-night struggles while searching for my first job. I hope my experience can guide you in some way.</p>
-
-  <p><strong>💬 My Message:</strong> I want to advise everyone — <em>keep learning, never stop, and stay strong</em>. One day, your efforts will be rewarded. You will get the job you deserve. I did, and so can you.</p>
-
-  <hr style="border-color: #444;">
-
-  <p>During my MCA in 2025, I had many ideas in my mind. I kept learning, practicing, and building small projects. But when I started applying for jobs, I got rejected again and again. I applied on LinkedIn, Naukri, and Glassdoor — almost every night around 12 AM. I attended interviews, but nothing worked out at first.</p>
-
-  <p>One day, I got a chance to work as an <strong>SEO Executive</strong>. I was excited at first, but when I joined, I realized — this was not what I wanted. I was a developer by heart, not someone who wanted to work in SEO. So I left the job after one day.</p>
-
-  <p>That decision wasn’t easy, but it was right. I kept going. I worked offline, improved my portfolio, learned more about frontend and backend development. I didn’t stop — even when things felt impossible.</p>
-
-  <p>Then came the turning point — I got a job as a <strong>Developer at Vawebhub</strong>. That moment was emotional. I had finally made it into the field I love. I started working on real-world projects, learned new skills, and got the growth I always wanted.</p>
-
-  <p>Now, I want to tell every student and fresher: <strong>Don’t settle for something you’re not passionate about.</strong> It’s okay to fail. It’s okay to take time. But don’t give up. Your time will come.</p>
-
-  <div style="background-color: #222; padding: 20px; border-left: 5px solid #dc3545; border-radius: 5px; margin-top: 20px;">
-    <strong>🔑 Final Tips:</strong>
-    <ul>
-      <li>Build a solid portfolio with real projects</li>
-      <li>Keep your GitHub active and clean</li>
-      <li>Learn Data Structures and Algorithms</li>
-      <li>Practice mock interviews and system design basics</li>
-      <li>Be consistent and confident</li>
-    </ul>
-  </div>
-
-  <p style="margin-top: 30px;">Stay motivated, stay focused. <strong>You’re not alone in this journey — I was once in your place, and now I’m growing as a developer.</strong></p>
-
-  <p><strong>– Ashis Kumar Rout</strong></p>
-
-</main>
-
-</main>
-
-<!-- Footer -->
-
-<!-- Footer Section -->
-<!-- Footer -->
-<footer class="custom-footer">
-  <div class="custom-footer-container">
-    <div class="footer-section">
-      <h5 class="footer-title">Ashis</h5>
-      <p class="footer-text">Passionate Full Stack Developer specializing in responsive websites, e-commerce solutions, and custom web applications.</p>
     </div>
+  </nav>
 
-    <div class="footer-section">
-      <h5 class="footer-title">Quick Links</h5>
-      <ul class="footer-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#blogs">Blogs</a></li>
+  <!-- Spacer after header -->
+  <div class="spacer-after-header"></div>
+
+  <!-- Blog Section -->
+  <main class="container" id="blog3">
+    <h2 class="text-danger">Tips for Landing Your First Developer Job</h2>
+    <h5 style="color: #aaa;">Written by Ashis Kumar Rout</h5>
+    <h6 style="color: #ccc;">Journey from Rejection to Developer</h6>
+
+    <p><strong>I’m Ashis Kumar Rout</strong>, and this blog is based on my real-life journey. I faced a lot of rejections, confusion, and late-night struggles while searching for my first job. I hope my experience can guide you in some way.</p>
+
+    <p><strong>💬 My Message:</strong> I want to advise everyone — <em>keep learning, never stop, and stay strong</em>. One day, your efforts will be rewarded. You will get the job you deserve. I did, and so can you.</p>
+
+    <hr style="border-color: #444;">
+
+    <p>During my MCA in 2025, I had many ideas in my mind. I kept learning, practicing, and building small projects. But when I started applying for jobs, I got rejected again and again. I applied on LinkedIn, Naukri, and Glassdoor — almost every night around 12 AM. I attended interviews, but nothing worked out at first.</p>
+
+    <p>One day, I got a chance to work as an <strong>SEO Executive</strong>. I was excited at first, but when I joined, I realized — this was not what I wanted. I was a developer by heart, not someone who wanted to work in SEO. So I left the job after one day.</p>
+
+    <p>That decision wasn’t easy, but it was right. I kept going. I worked offline, improved my portfolio, learned more about frontend and backend development. I didn’t stop — even when things felt impossible.</p>
+
+    <p>Then came the turning point — I got a job as a <strong>Developer at Vawebhub</strong>. That moment was emotional. I had finally made it into the field I love. I started working on real-world projects, learned new skills, and got the growth I always wanted.</p>
+
+    <p>Now, I want to tell every student and fresher: <strong>Don’t settle for something you’re not passionate about.</strong> It’s okay to fail. It’s okay to take time. But don’t give up. Your time will come.</p>
+
+    <div style="background-color: #222; padding: 20px; border-left: 5px solid #dc3545; border-radius: 5px; margin-top: 20px;">
+      <strong>🔑 Final Tips:</strong>
+      <ul>
+        <li>Build a solid portfolio with real projects</li>
+        <li>Keep your GitHub active and clean</li>
+        <li>Learn Data Structures and Algorithms</li>
+        <li>Practice mock interviews and system design basics</li>
+        <li>Be consistent and confident</li>
       </ul>
     </div>
 
-    <div class="footer-section">
-      <h5 class="footer-title">Contact</h5>
-      <p class="footer-text">Email: <a href="mailto:routasis411@gmail.com">routasis411@gmail.com</a></p>
-      <p class="footer-text">Phone: <a href="tel:+917008448569">+91 7008448569</a></p>
-      <p class="footer-text">Location: Cuttack, Odisha, India</p>
+    <p style="margin-top: 30px;">Stay motivated, stay focused. <strong>You’re not alone in this journey — I was once in your place, and now I’m growing as a developer.</strong></p>
+    <p><strong>– Ashis Kumar Rout</strong></p>
+  </main>
+
+  <!-- Spacer before footer -->
+  <div class="spacer-before-footer"></div>
+
+  <!-- Footer -->
+  <footer class="custom-footer">
+    <div class="custom-footer-container">
+      <div class="footer-section">
+        <h5 class="footer-title">Ashis</h5>
+        <p class="footer-text">Passionate Full Stack Developer specializing in responsive websites, e-commerce solutions, and custom web applications.</p>
+      </div>
+
+      <div class="footer-section">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h5 class="footer-title">Contact</h5>
+        <p class="footer-text">Email: <a href="mailto:routasis411@gmail.com">routasis411@gmail.com</a></p>
+        <p class="footer-text">Phone: <a href="tel:+917008448569">+91 7008448569</a></p>
+        <p class="footer-text">Location: Cuttack, Odisha, India</p>
+      </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="footer-socials">
-      <a href="https://facebook.com/ashis.kumarrout.752"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/7008448569"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://instagram.com/ashis5769"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/ashis-rout"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://facebook.com/ashis.kumarrout.752"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/7008448569"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/ashis5769"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/ashis-rout"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2025 <strong>Ashis</strong>. All rights reserved. <i class="fa-solid fa-heart text-danger"></i> Designed & Developed by Ashis</p>
     </div>
-    <p>&copy; 2025 <strong>Ashis</strong>. All rights reserved. <i class="fa-solid fa-heart text-danger"></i> Designed & Developed by Ashis</p>
-  </div>
-</footer>
-<style>
-  .custom-footer {
-  background: #000;
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-family: sans-serif;
-}
+  </footer>
 
-.custom-footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.footer-section {
-  flex: 1 1 300px;
-}
-
-.footer-title {
-  color: #dc3545;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.footer-text {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  border-top: 1px solid #444;
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 15px;
-  font-size: 14px;
-}
-
-.footer-socials {
-  margin-bottom: 10px;
-}
-
-.footer-socials a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 18px;
-}
-
-.footer-socials a:hover {
-  color: #dc3545;
-}
-
-@media (max-width: 768px) {
-  .custom-footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-section {
-    flex: 1 1 100%;
-  }
-}
-
-</style>
-<style>
-  .blog-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-}
-
-</style>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

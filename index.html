@@ -41,33 +41,54 @@
 
   <body>
     <!-- 🔷 Navbar -->
-    <nav class="navbar navbar-expand-lg bg-black shadow">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="Ashis_logo-removebg-preview1.png" alt="Logo" class="navbar-logo">
-        </a>
-        <span class="d-none d-lg-flex align-items-center ms-3" style="font-size:1.3rem;">
-  <i class="fa-solid fa-phone me-2 text-success" style="font-size:1.5rem;"></i>
-  <a href="tel:7008448569" style="color:#fff; text-decoration:none; background:#000000; padding:8px 18px; border-radius:8px; font-size:1.3rem;">
-    7008448569
-  </a>
-</span>
+   <nav class="navbar navbar-expand-lg bg-black shadow px-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="Ashis_logo-removebg-preview1.png" alt="Logo" class="navbar-logo">
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active text-white" href="#home">Home</a>
-            <a class="nav-link text-white" href="#about">About</a>
-            <a class="nav-link text-white" href="#services">Services</a>
-            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
-            <a class="nav-link text-white" href="#contact">Contact</a>
-            <a class="nav-link text-white" href="#blogs">Blogs</a>
-          </div>
+    <span class="d-none d-lg-flex align-items-center ms-3" style="font-size:1.3rem;">
+      <i class="fa-solid fa-phone me-2 text-success" style="font-size:1.5rem;"></i>
+      <a href="tel:7008448569" style="color:#fff; text-decoration:none; background:#000000; padding:8px 18px; border-radius:8px; font-size:1.3rem;">
+        7008448569
+      </a>
+    </span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav gap-2">
+        <a class="nav-link active text-white" href="#home">Home</a>
+        <a class="nav-link text-white" href="#about">About</a>
+        <a class="nav-link text-white" href="#services">Services</a>
+        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+        <a class="nav-link text-white" href="#contact">Contact</a>
+
+        <!-- Dropdown for Blogs -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="blogsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blogs
+          </a>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="blogsDropdown" style="min-width: 220px;">
+            <li><a class="dropdown-item text-white py-2" href="blog1.html">Build Portfolio Website</a></li>
+            <li><a class="dropdown-item text-white py-2" href="blog2.html">React vs Angular</a></li>
+            <li><a class="dropdown-item text-white py-2" href="blog3.html">First Developer Job</a></li>
+          </ul>
         </div>
+         <a class="nav-link text-white" href="#contact">Contact</a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #dc3545; /* Bootstrap red */
+    color: #fff;
+  }
+</style>
 
 
 
@@ -500,7 +521,7 @@ particlesJS('particles-js-hero', {
           <div class="card-body">
             <h3 class="card-title">Tips for Landing Your First Developer Job</h3>
             <p class="card-text">Essential advice for new developers entering the tech industry.</p>
-            <a href="b" target="_blank" class="btn btn-outline-danger btn-sm">Read More</a>
+            <a href="blog3.html" target="_blank" class="btn btn-outline-danger btn-sm">Read More</a>
           </div>
         </div>
       </div>
