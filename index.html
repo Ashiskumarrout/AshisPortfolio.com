@@ -1,673 +1,479 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ashis Kumar Rout | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Ashis Kumar Rout is a Full Stack Developer from Odisha, India, building modern web applications with React.js, Laravel, WordPress, PHP, and Shopify."
+    />
+    <meta
+      name="keywords"
+      content="Ashis Kumar Rout, Full Stack Developer, React.js, Laravel, WordPress, Shopify, Odisha, portfolio"
+    />
+    <meta name="author" content="Ashis Kumar Rout" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="Ashis_logo-removebg-preview1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Ashis_logo-removebg-preview1.png" type="image/x-icon" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- FontAwesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/e6878467af.js" crossorigin="anonymous"></script>
-
-    <!-- AOS Animation -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styile.css">
-
-    <style>
-      .navbar-logo {
-        width: 200px; /* Increased size */
-        height: auto;
-      }
-.navbar-brand img {
-    height:120px;
-    object-fit: contain;
-}
-
-.navbar {
-        background-color: #000; /* Black background */
-      }
-      .nav-link:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="styile.css" />
   </head>
 
-  <body>
-    <!-- 🔷 Navbar -->
-   <nav class="navbar navbar-expand-lg bg-black shadow px-3">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="Ashis_logo-removebg-preview1.png" alt="Logo" class="navbar-logo">
-    </a>
+  <body class="theme-luxury">
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
 
-    <span class="d-none d-lg-flex align-items-center ms-3" style="font-size:1.3rem;">
-      <i class="fa-solid fa-phone me-2 text-success" style="font-size:1.5rem;"></i>
-      <a href="tel:7008448569" style="color:#fff; text-decoration:none; background:#000000; padding:8px 18px; border-radius:8px; font-size:1.3rem;">
-        7008448569
-      </a>
-    </span>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav gap-2">
-        <a class="nav-link active text-white" href="#home">Home</a>
-        <a class="nav-link text-white" href="#about">About</a>
-        <a class="nav-link text-white" href="#services">Services</a>
-        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
-        <a class="nav-link text-white" href="#contact">Contact</a>
-
-        <!-- Dropdown for Blogs -->
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="blogsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blogs
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top nav-glass" aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="Ashis_logo-removebg-preview1.png" alt="Ashis Kumar Rout logo" class="brand-logo" />
           </a>
-          <ul class="dropdown-menu bg-dark" aria-labelledby="blogsDropdown" style="min-width: 220px;">
-            <li><a class="dropdown-item text-white py-2" href="blog1.html">Build Portfolio Website</a></li>
-            <li><a class="dropdown-item text-white py-2" href="blog2.html">React vs Angular</a></li>
-            <li><a class="dropdown-item text-white py-2" href="blog3.html">First Developer Job</a></li>
-          </ul>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-         <a class="nav-link text-white" href="#contact">Contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
+      </nav>
+    </header>
 
-<style>
-  .dropdown-menu .dropdown-item:hover {
-    background-color: #dc3545; /* Bootstrap red */
-    color: #fff;
-  }
-</style>
+    <main>
+      <section id="home" class="hero section-space">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+              <p class="kicker">Software Developer | Softech18</p>
+              <h1 class="hero-title">
+                Ashis Kumar Rout
+                <span>Building premium web products from Odisha, India</span>
+              </h1>
+              <p class="hero-copy">
+                I design and develop modern, conversion-focused websites and applications with strong architecture, premium UI, and measurable business impact.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="#projects" class="btn btn-gradient">View Projects</a>
+                <a href="#contact" class="btn btn-outline-light-custom">Hire Me</a>
+                <a href="Ashis kumar rout - Resume.pdf" download class="btn btn-soft">Download CV</a>
+              </div>
+              <div class="hero-points mt-4">
+                <span><i class="fa-solid fa-check"></i> 30+ Websites Delivered</span>
+                <span><i class="fa-solid fa-check"></i> Clients: India, USA, Australia, Africa</span>
+                <span><i class="fa-solid fa-check"></i> WordPress, Shopify, React, Laravel</span>
+              </div>
+            </div>
 
-
-
-   <!-- Hero Section -->
-<section data-aos="fade-up" data-aos-duration="2000" style="position:relative; overflow:hidden;">
-  <div id="particles-js-hero"></div>
-  <div class="container position-relative" style="z-index:1;">
-    <div class="row align-items-center">
-      <div class="col order-last text-center">
-        <img src="mybestphto.png" alt="Ashis" class="profile-photo" data-aos="zoom-in" data-aos-duration="2000">
-      </div>
-      <div class="col text-center">
-        <p data-aos="fade-up" data-aos-duration="2000">Software Developer at Softech18</p>
-        <h1 data-aos="fade-up" data-aos-duration="2000">
-          Hi, I'm <span>Ashis Kumar Rout</span><br>Your Web Development Partner
-        </h1>
-        <p data-aos="fade-up" data-aos-duration="2000">
-          Passionate about crafting modern, user-friendly web applications.<br>
-          Specializing in <strong>React.js</strong>, <strong>Node.js</strong>, <strong>Laravel</strong>, and <strong>WordPress</strong>.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Place this before </body> -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-particlesJS('particles-js-hero', {
-  "particles": {
-    "number": {
-      "value": 200,  // ⬅️ Increased from 60 to 120
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": { "value": "#ffffff" },
-    "shape": { "type": "circle" },
-    "opacity": { "value": 0.5, "random": false },
-    "size": { "value": 3, "random": true },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": { "enable": true, "mode": "repulse" },
-      "onclick": { "enable": true, "mode": "push" },
-      "resize": true
-    },
-    "modes": {
-      "repulse": { "distance": 100, "duration": 0.4 },
-      "push": { "particles_nb": 4 }
-    }
-  },
-  "retina_detect": true
-});
-</script>
-
-<style>
-#particles-js-hero {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  z-index: 0;
-}
-</style>
-
-<!-- About Section -->
-<section id="about" class="py-5 bg-black text-white" data-aos="fade-right" data-aos-duration="2000">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center">
-        <!-- <img src="mybestphto.png" alt="Profile Photo" class="img-fluid rounded-circle border border-light p-2" style="width: 200px; height: 200px; object-fit: cover;" data-aos="zoom-in" data-aos-duration="2000"> -->
-         <div class="rotating-border-wrapper">
-  <div class="rotating-border"></div>
-  <div class="profile-image">
-    <img src="mybestphto.png" alt="Profile Photo">
-  </div>
-</div>
-<style>
-    .rotating-border-wrapper {
-  position: relative;
-  width: 240px;
-  height: 240px;
-  margin: auto;
-}
-
-.rotating-border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  background: conic-gradient(
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet,
-    red
-  );
-  animation: spin 4s linear infinite;
-  z-index: 1;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-}
-
-.profile-image {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 200px;
-  height: 200px;
-  background: black;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 2;
-  border: 3px solid white;
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;
-}
-  
-@keyframes spin {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-</style>
-      </div>
-      <div class="col-md-8">
-        <h1 class="sub-title text-danger fw-bold" data-aos="fade-up" data-aos-duration="2000">About Me</h1>
-        <p class="lead" data-aos="fade-up" data-aos-duration="2000">
-  I am a dedicated <strong>Full Stack Developer</strong> with practical experience in building dynamic and scalable web applications using <strong>React.js</strong>, <strong>Node.js</strong>, <strong>Laravel</strong>, and <strong>WordPress</strong>.  
-  I specialize in developing <strong>responsive websites</strong>, <strong>e-commerce platforms</strong>, and <strong>custom web solutions</strong> tailored to client needs.  
-  Currently, I am working as a <strong>Software Developer at Softech18</strong> while pursuing my <strong>Master of Computer Applications (MCA)</strong> at <strong>ABIT</strong>, with graduation expected in <strong>2025</strong>.
-</p>
-
-        <div class="d-flex justify-content-start">
-          <button class="btn btn-outline-danger me-2" data-bs-toggle="collapse" data-bs-target="#skills" data-aos="fade-up" data-aos-duration="2000">Skills</button>
-          <button class="btn btn-outline-warning me-2" data-bs-toggle="collapse" data-bs-target="#experience" data-aos="fade-up" data-aos-duration="2000">Experience</button>
-          <button class="btn btn-outline-info me-2" data-bs-toggle="collapse" data-bs-target="#education" data-aos="fade-up" data-aos-duration="2000">Education</button>
-          <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#projects" data-aos="fade-up" data-aos-duration="2000">Projects</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-4">
-      <div class="accordion" id="aboutAccordion">
-
-        <!-- Skills -->
-       <div class="accordion-item bg-black">
-  <h2 class="accordion-header">
-    <button class="accordion-button bg-black text-danger" data-bs-toggle="collapse" data-bs-target="#skills">
-      Skills
-    </button>
-  </h2>
-  <div id="skills" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
-    <div class="accordion-body text-white">
-      <ul>
-        <li><strong>Programming Languages:</strong> PHP, Laravel, Java, JavaScript</li>
-        <li><strong>Web Technologies:</strong> HTML, CSS, Bootstrap, Tailwind CSS, ReactJS, Node.js, Express.js</li>
-        <li><strong>Database & Backend:</strong> MySQL, MongoDB, PHPMyAdmin, RESTful APIs</li>
-        <li><strong>Version Control & Deployment:</strong> Git, GitHub, cPanel, FTP, Hosting Management</li>
-        <li><strong>Content Management Systems:</strong> WordPress (Theme & Plugin Customization), Shopify</li>
-        <li><strong>UI/UX & Design Tools:</strong> Canva (Banners, Logos), Responsive Design Principles</li>
-        <li><strong>SEO & Web Optimization:</strong> Keyword Research, On-Page & Off-Page SEO, Structured Data, Page Speed Optimization</li>
-        <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Time Management, Client Communication</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-        <!-- Experience -->
-        <div class="accordion-item bg-black">
-          <h2 class="accordion-header">
-            <button class="accordion-button bg-black text-warning" data-bs-toggle="collapse" data-bs-target="#experience">
-              Experience
-            </button>
-          </h2>
-          <div id="experience" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
-            <div class="accordion-body text-white">
-              <ul>
-                <li><strong>Software Developer - Softech18 (June 2025 - Present)</strong></li>
-                <li>Developing and maintaining responsive websites and web applications.</li>
-                <li>Collaborating with designers and backend developers to implement UI/UX.</li>
-                <li>Writing clean, optimized code in PHP, Laravel, and MySQL.</li>
-                <li>Participating in documentation and team collaboration for ongoing projects.</li>
-              </ul>
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
+              <div class="profile-card glass-card">
+                <div class="profile-ring"></div>
+                <img src="mybestphto.png" alt="Ashis Kumar Rout profile photo" class="profile-photo" />
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Education -->
-        <div class="accordion-item bg-black">
-          <h2 class="accordion-header">
-            <button class="accordion-button bg-black text-info" data-bs-toggle="collapse" data-bs-target="#education">
-              Education
-            </button>
-          </h2>
-          <div id="education" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
-            <div class="accordion-body text-white">
-              <ul>
-                <li><strong>MCA at ABIT under BPUT:</strong> Completing in 2025</li>
-                <li><strong>B.Sc. from Utkal University:</strong> 80% (2022)</li>
-                <li><strong>12th from CHSE, Odisha:</strong> 50% (2019)</li>
-                <li><strong>10th from BSE, Odisha:</strong> 62% (2017)</li>
-              </ul>
+      <section id="about" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>
+              I am a dedicated Full Stack Developer with practical industry experience in building scalable and responsive digital products.
+            </p>
+          </div>
+
+          <div class="glass-card about-panel" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Currently working as a Software Developer at Softech18, I have designed and delivered 30+ websites and e-commerce solutions using React.js, Laravel, PHP, WordPress, Shopify, and modern frontend technologies. I manage complete project lifecycles from planning to deployment and maintenance while ensuring performance, SEO, and business outcomes.
+            </p>
+            <div class="about-highlights">
+              <div>
+                <h3>30+</h3>
+                <p>Websites and stores built</p>
+              </div>
+              <div>
+                <h3>50,000+</h3>
+                <p>Entries handled in data-heavy projects</p>
+              </div>
+              <div>
+                <h3>4</h3>
+                <p>International markets served</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Projects -->
-        <div class="accordion-item bg-black">
-  <h2 class="accordion-header">
-    <button class="accordion-button bg-black text-primary" data-bs-toggle="collapse" data-bs-target="#projects">
-      Projects
-    </button>
-  </h2>
-  <div id="projects" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
-    <div class="accordion-body text-white">
-      <ul>
-        <li>
-          <strong>E-commerce Website:</strong><br>
-          • Built an e-commerce site with PHP, Laravel, auth, product listings, and a dynamic cart.<br>
-          • Integrated secure login/logout, optimized database schema, and implemented RESTful APIs for smooth communication between front-end and back-end.<br>
-          • Optimized On-Page SEO (meta tags, structured data, page speed) to enhance search rankings.
-        </li>
-        <li>
-          <strong>Personal Portfolio Website:</strong> <a href="http://ashistech.space/" target="_blank" class="text-primary">(ashistech.space)</a><br>
-          • Designed and developed a fully responsive personal portfolio website using HTML, CSS, and JavaScript, ensuring fast loading and optimized performance on all devices.
-        </li>
-        <li>
-          <strong>VaWebHub – Digital Agency Website:</strong><br>
-          • Developed the complete business website for a digital agency using PHP and modern UI/UX.<br>
-          • Highlighted services, stats, and client sections with mobile-friendly design.
-        </li>
-        <li>
-          <strong>Other Notable Projects (WordPress & Shopify):</strong><br>
-          • Delivered 20+ WordPress websites across sectors like events, health, education, and NGOs.<br>
-          • Key projects include The Wedding Clicks, Parr Organization (<a href="https://parr.org.in" target="_blank" class="text-primary">parr.org.in</a>), Essphar (<a href="https://essphar.in" target="_blank" class="text-primary">essphar.in</a>), and Stradia Sport (<a href="https://stradiasport.com" target="_blank" class="text-primary">stradiasport.com</a> – Shopify).
-        </li>
-      </ul>
-      <a href="http://ashistech.space/" class="btn btn-outline-danger mt-2 portfolio">Visit Portfolio</a>
-    </div>
-  </div>
-</div>
+      <section id="skills" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Skills</h2>
+            <p>Structured expertise across frontend, backend, databases, and professional tools.</p>
+          </div>
 
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services Section -->
-<div id="services" class="services py-5" style="background-color: black; color: white;" data-aos="fade-left" data-aos-duration="2000">
-    <div class="container">
-        <h1 class="sub-title text-center mb-4" style="color: white;" data-aos="fade-up" data-aos-duration="2000">My Services</h1>
-        <div class="row g-4">
-            <!-- Web Design -->
-            <div class="col-md-6 col-lg-6">
-                <div class="card text-center shadow p-4 border-0">
-                    <i class="fa-solid fa-code fa-3x text-primary mb-3" data-aos="zoom-in" data-aos-duration="2000"></i>
-                    <h2 class="h4" data-aos="fade-up" data-aos-duration="2000">Web Design</h2>
-                    <p data-aos="fade-up" data-aos-duration="2000">Creating stunning and functional web designs that enhance user experience and drive engagement.</p>
-                    <a href="#" class="btn btn-primary btn-sm" data-aos="fade-up" data-aos-duration="2000">Explore My Work</a>
-                </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+              <article class="glass-card skill-card h-100">
+                <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>Tailwind CSS</li>
+                  <li>React.js</li>
+                  <li>JavaScript</li>
+                </ul>
+              </article>
             </div>
-
-            <!-- UX/UI Design -->
-            <div class="col-md-6 col-lg-6">
-                <div class="card text-center shadow p-4 border-0">
-                    <i class="fa-solid fa-crop fa-3x text-danger mb-3"></i>
-                    <h2 class="h4">UX/UI Design</h2>
-                    <p>Transforming user experiences through intuitive designs that enhance interaction and usability.</p>
-                    <a href="#" class="btn btn-danger btn-sm">Discover More</a>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <article class="glass-card skill-card h-100">
+                <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                <ul>
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>RESTful APIs</li>
+                  <li>WordPress</li>
+                  <li>Shopify</li>
+                </ul>
+              </article>
             </div>
-
-            <!-- App Design -->
-            <div class="col-md-6 col-lg-6">
-                <div class="card text-center shadow p-4 border-0">
-                    <i class="fa-brands fa-app-store fa-3x text-success mb-3"></i>
-                    <h2 class="h4">App Design</h2>
-                    <p>Designing user-friendly and innovative applications with intuitive interfaces for better experiences.</p>
-                    <a href="#" class="btn btn-success btn-sm">See My Work</a>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <article class="glass-card skill-card h-100">
+                <h3><i class="fa-solid fa-database"></i> Database</h3>
+                <ul>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Data Modeling</li>
+                </ul>
+              </article>
             </div>
-
-            <!-- SEO Optimization -->
-            <div class="col-md-6 col-lg-6">
-                <div class="card text-center shadow p-4 border-0">
-                    <i class="fa-solid fa-chart-line fa-3x text-warning mb-3"></i>
-                    <h2 class="h4">SEO Optimization</h2>
-                    <p>Boosting website rankings with keyword research, on-page SEO, and technical optimization.</p>
-                    <a href="#" class="btn btn-warning btn-sm">Learn More</a>
-                </div>
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <article class="glass-card skill-card h-100">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+                <ul>
+                  <li>Git & GitHub</li>
+                  <li>cPanel</li>
+                  <li>GoDaddy & Hostinger</li>
+                  <li>Domain & DNS</li>
+                  <li>SEO Optimization</li>
+                  <li>Canva</li>
+                </ul>
+              </article>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
-<!-- Portfolio Section -->
-<div id="portfolio" data-aos="zoom-in" data-aos-duration="2000">
-    <div class="container">
-        <h1 class="sub-title" data-aos="fade-down" data-aos-duration="2000">My Work</h1>
-        <div class="work-list">
-            <!-- React Currency Converter Project -->
-            <div class="work" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
-                <img src="work-1.png" alt="Currency Converter App" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="layer">
-                    <h3 data-aos="fade-up" data-aos-duration="2000">Currency Converter (React)</h3>
-                    <p data-aos="fade-up" data-aos-duration="2000">A React-based web app for real-time currency conversions using live API data.</p>
-                    <a href="https://github.com/yourusername/currency-converter" target="_blank" data-aos="fade-up" data-aos-duration="2000">Click</a>
-                </div>
-            </div>
+      <section id="experience" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Work Experience</h2>
+            <p>Real-world delivery experience with measurable outcomes and international exposure.</p>
+          </div>
 
-            <!-- Music App Project -->
-            <div class="work" data-aos="fade-up" data-aos-delay="200">
-                <img src="work-2.png" alt="Music App">
-                <div class="layer">
-                    <h3>music App</h3>
-                    <p>A feature-rich music app providing a personalized experience and social features.</p>
-                    <a href="https://github.com/yourusername/musiki-app" target="_blank">Click</a>
-                </div>
+          <article class="glass-card experience-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="experience-top">
+              <div>
+                <h3>Softech18</h3>
+                <p>Software Developer</p>
+              </div>
+              <span>March 2025 - Present</span>
             </div>
-
-            <!-- E-Commerce Website Project -->
-            <div class="work" data-aos="fade-up" data-aos-delay="300">
-                <img src="work-3.png" alt="E-Commerce Website">
-                <div class="layer">
-                    <h3>E-Commerce Website</h3>
-                    <p>An online shopping platform with authentication, product listings, and secure checkout.</p>
-                    <a href="https://github.com/yourusername/ecommerce-website" target="_blank">Click</a>
-                </div>
-            </div>
+            <ul>
+              <li>Designed and developed modern responsive websites and web apps using React, PHP, Laravel, WordPress, and Shopify.</li>
+              <li>Built high-performance solutions with MySQL and PostgreSQL for reliable data and scalability.</li>
+              <li>Delivered SEO-friendly and fast WordPress experiences including a luxury travel platform.</li>
+              <li>Managed deployment, hosting, optimization, and long-term maintenance for production projects.</li>
+              <li>Successfully delivered 30+ client projects across events, healthcare, education, government, NGOs, and e-commerce.</li>
+              <li>Worked with international clients from India, USA, Australia, and Africa, including The Wedding Clicks, Safaricontinents, St. Xavier's High School, Next Level MMA, Magid Carpet, and Stradiasport.</li>
+            </ul>
+          </article>
         </div>
-        <a href="https://github.com/yourusername" target="_blank" class="see-more-link" data-aos="fade-up" data-aos-delay="400" data-aos-duration="2000">See More</a>
-    </div>
-</div>
+      </section>
 
-<!-- Contact Section -->
-<div id="contact" class="contact" data-aos="fade-up" data-aos-duration="2000">
-    <div class="container">
-        <div class="row">
-            <!-- Contact Left -->
-            <div class="col-md-4 contact-left">
-                <h1 class="sub-title" data-aos="fade-up" data-aos-duration="2000">Contact Me</h1>
-                <p data-aos="fade-up" data-aos-duration="2000"><i class="fa-solid fa-paper-plane"></i> routasis411@gmail.com</p>
-                <p data-aos="fade-up" data-aos-duration="2000"><i class="fa-solid fa-phone"></i> 7008448569</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/Ashis Kumar Rout" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://wa.me/7008448569" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://instagram.com/ashis5769" target="_blank" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://github.com/Ashiskumarrout" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <section id="services" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Services</h2>
+            <p>End-to-end digital solutions focused on quality, performance, and conversion.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+              <article class="glass-card service-card h-100">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Custom business websites and web apps with clean architecture, responsive layouts, and scalable code.</p>
+              </article>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <article class="glass-card service-card h-100">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3>UI/UX Design</h3>
+                <p>Modern user interfaces designed for intuitive navigation, stronger engagement, and premium visual identity.</p>
+              </article>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <article class="glass-card service-card h-100">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>E-commerce Development</h3>
+                <p>Conversion-focused WooCommerce and Shopify stores with secure checkout and optimized shopping flows.</p>
+              </article>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <article class="glass-card service-card h-100">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>SEO Optimization</h3>
+                <p>On-page and technical SEO strategies for better rankings, faster load speed, and long-term organic growth.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <p>Selected projects that demonstrate technical depth, performance focus, and product delivery.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+              <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <h3>Smart Billing, GST & Client Management</h3>
+                <p>Web app in PHP and MySQL with automated GST, invoicing, admin dashboard, and PDF/Excel export.</p>
+                <div class="project-links">
+                  <a href="#contact">Request Demo</a>
                 </div>
-                <a href="Ashis kumar rout - Resume  11.pdf" download class="btn btn-danger btn-lg">Download CV</a>
+              </article>
             </div>
 
-            <!-- Contact Right -->
-            <div class="col-md-8 contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="name" placeholder="Your Name" class="form-control mb-3" required data-aos="fade-up" data-aos-duration="2000">
-                    <input type="email" name="email" id="your-email" placeholder="Your Email" class="form-control mb-3" required data-aos="fade-up" data-aos-duration="2000">
-                    <textarea name="message" rows="6" placeholder="Your Message" class="form-control mb-3" required data-aos="fade-up" data-aos-duration="2000"></textarea>
-                    <button type="submit" class="btn btn-danger btn-lg" data-aos="fade-up" data-aos-duration="2000">Submit</button>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
+              <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-id-card"></i></div>
+                <h3>Event ID Management System</h3>
+                <p>PHP and MySQL system with uploads and auto-ID generation; processed 50,000+ entries efficiently.</p>
+                <div class="project-links">
+                  <a href="#contact">Request Demo</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+              <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <h3>E-commerce Platform</h3>
+                <p>PHP-based platform with authentication, dynamic cart, REST APIs, and SEO improvements.</p>
+                <div class="project-links">
+                  <a href="#contact">Request Demo</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+              <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-user"></i></div>
+                <h3>Personal Portfolio Website</h3>
+                <p>Fully responsive portfolio website designed for speed, branding clarity, and recruiter impact.</p>
+                <div class="project-links">
+                  <a href="https://ashistech.space/" target="_blank" rel="noopener noreferrer">Live Site</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
+              <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-building"></i></div>
+                <h3>VaWebHub Agency Website</h3>
+                <p>PHP-powered agency website with modern UI/UX, service-focused pages, and mobile-first structure.</p>
+                <div class="project-links">
+                  <a href="#contact">Request Demo</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+              <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h3>Laravel E-Commerce Admin Platform</h3>
+                <p>Full-featured e-commerce system built with Laravel featuring secure user login, admin dashboard, order tracking, inventory management, and complete payment integration.</p>
+                <div class="project-links">
+                  <a href="#contact">Request Demo</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Education</h2>
+            <p>Strong academic foundation in computer applications and software development.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <article class="glass-card edu-card h-100">
+                <h3>MCA - ABIT under BPUT</h3>
+                <p>Completed in March 2025 with average CGPA of 8.30, including all semesters and final project.</p>
+              </article>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <article class="glass-card edu-card h-100">
+                <h3>B.Sc - Utkal University</h3>
+                <p>Regional Degree College, Rambag, Jajpur. Completed in 2022 with 80%.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blogs" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Blogs</h2>
+            <p>Insights on development, career growth, and modern web engineering.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+              <article class="glass-card blog-card h-100">
+                <h3>How to Build a Portfolio Website</h3>
+                <p>A practical step-by-step guide for developers building a strong online identity.</p>
+                <a href="blog1.html" target="_blank" rel="noopener noreferrer">Read Article</a>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+              <article class="glass-card blog-card h-100">
+                <h3>React vs Angular: Which to Choose?</h3>
+                <p>A balanced comparison of architecture, ecosystem, and use cases for teams.</p>
+                <a href="blog2.html" target="_blank" rel="noopener noreferrer">Read Article</a>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="240">
+              <article class="glass-card blog-card h-100">
+                <h3>Tips for Landing First Developer Job</h3>
+                <p>Practical strategies to build credibility, portfolio quality, and interview confidence.</p>
+                <a href="blog3.html" target="_blank" rel="noopener noreferrer">Read Article</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-space">
+        <div class="container">
+          <div class="section-head" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Open to premium freelance projects, full-time opportunities, and technical collaborations.</p>
+          </div>
+
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5" data-aos="fade-right">
+              <div class="glass-card contact-info h-100">
+                <h3>Let's build something premium.</h3>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:routasis411@gmail.com">routasis411@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+917008448569">+91 7008448569</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> Odisha, India</p>
+                <div class="socials">
+                  <a href="https://www.linkedin.com/in/ashis-rout" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/Ashiskumarrout" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://instagram.com/ashis5769" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://wa.me/7008448569" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left">
+              <div class="glass-card contact-form-wrap h-100">
+                <form name="submit-to-google-sheet" class="contact-form" novalidate>
+                  <label for="name" class="form-label">Your Name</label>
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required />
+
+                  <label for="email" class="form-label">Your Email</label>
+                  <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email" required />
+
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea id="message" name="message" rows="6" class="form-control" placeholder="Tell me about your project" required></textarea>
+
+                  <button type="submit" class="btn btn-gradient mt-3">Send Message</button>
                 </form>
-                <span id="msg"></span>
+                <p id="msg" class="form-message" aria-live="polite"></p>
+              </div>
             </div>
-        </div>
-    </div>
-
-
-
-<!-- Blogs Section -->
-<!-- Blogs Section -->
-<section id="blogs" class="py-5 bg-dark text-white" data-aos="fade-up" data-aos-duration="2000">
-  <div class="container">
-    <h1 class="sub-title mb-4 text-center">My Blogs</h1>
-    <div class="row g-4">
-
-      <!-- Blog Card -->
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card blog-card bg-black text-white h-100">
-          <div class="card-body">
-            <h3 class="card-title">How to Build a Portfolio Website</h3>
-            <p class="card-text">Step-by-step guide to creating a modern, responsive portfolio using HTML, CSS, and JavaScript.</p>
-            <a href="blog1.html" target="_blank" class="btn btn-outline-danger btn-sm">Read More</a>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="mb-0">&copy; <span id="year"></span> Ashis Kumar Rout. All rights reserved.</p>
       </div>
+    </footer>
 
-      <!-- Blog Card -->
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card blog-card bg-black text-white h-100">
-          <div class="card-body">
-            <h3 class="card-title">React vs. Angular: Which to Choose?</h3>
-            <p class="card-text">A comparison of two popular JavaScript frameworks for building web applications.</p>
-            <a href="blog2.html" target="_blank" class="btn btn-outline-danger btn-sm">Read More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog Card -->
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card blog-card bg-black text-white h-100">
-          <div class="card-body">
-            <h3 class="card-title">Tips for Landing Your First Developer Job</h3>
-            <p class="card-text">Essential advice for new developers entering the tech industry.</p>
-            <a href="blog3.html" target="_blank" class="btn btn-outline-danger btn-sm">Read More</a>
-          </div>
-        </div>
-      </div>
-
+    <div class="quick-contact" aria-label="Quick contact actions">
+      <a
+        href="https://wa.me/91700855869"
+        class="quick-btn quick-btn-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+91700855869" class="quick-btn quick-btn-call" aria-label="Call now">
+        <i class="fa-solid fa-phone"></i>
+        <span>Call</span>
+      </a>
     </div>
-  </div>
-</section>
-
-<!-- Footer Section -->
-<!-- Footer -->
-<footer class="custom-footer">
-  <div class="custom-footer-container">
-    <div class="footer-section">
-      <h5 class="footer-title">Ashis</h5>
-      <p class="footer-text">Passionate Full Stack Developer specializing in responsive websites, e-commerce solutions, and custom web applications.</p>
-    </div>
-
-    <div class="footer-section">
-      <h5 class="footer-title">Quick Links</h5>
-      <ul class="footer-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h5 class="footer-title">Contact</h5>
-      <p class="footer-text">Email: <a href="mailto:routasis411@gmail.com">routasis411@gmail.com</a></p>
-      <p class="footer-text">Phone: <a href="tel:+917008448569">+91 7008448569</a></p>
-      <p class="footer-text">Location: Cuttack, Odisha, India</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="footer-socials">
-      <a href="https://facebook.com/ashis.kumarrout.752"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/7008448569"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://instagram.com/ashis5769"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com/in/ashis-rout"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
-    </div>
-    <p>&copy; 2025 <strong>Ashis</strong>. All rights reserved. <i class="fa-solid fa-heart text-danger"></i> Designed & Developed by Ashis</p>
-  </div>
-</footer>
-<style>
-  .custom-footer {
-  background: #000;
-  color: #fff;
-  padding: 40px 20px 20px;
-  font-family: sans-serif;
-}
-
-.custom-footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.footer-section {
-  flex: 1 1 300px;
-}
-
-.footer-title {
-  color: #dc3545;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.footer-text {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  border-top: 1px solid #444;
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 15px;
-  font-size: 14px;
-}
-
-.footer-socials {
-  margin-bottom: 10px;
-}
-
-.footer-socials a {
-  color: #fff;
-  margin: 0 10px;
-  font-size: 18px;
-}
-
-.footer-socials a:hover {
-  color: #dc3545;
-}
-
-@media (max-width: 768px) {
-  .custom-footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-section {
-    flex: 1 1 100%;
-  }
-}
-
-</style>
-<style>
-  .blog-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-}
-
-</style>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="as.js"></script>
   </body>
 </html>
-
