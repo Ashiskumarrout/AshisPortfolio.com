@@ -145,4 +145,41 @@
         });
     });
   }
+
+  // Dark Mode Toggle Logic
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector("i") : null;
+  
+  if (themeToggleBtn && themeIcon) {
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+      document.body.classList.add("dark-theme");
+      themeIcon.classList.replace("fa-moon", "fa-sun");
+    }
+
+    themeToggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+      } else {
+        localStorage.setItem("theme", "light");
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+      }
+    });
+  }
+
+  // Page Loader Logic
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("page-loader");
+    if (loader) {
+      setTimeout(() => {
+        loader.classList.add("hidden");
+        setTimeout(() => {
+          loader.remove();
+        }, 800); // Matches CSS transition duration
+      }, 500); // Small enforced delay for viewing the cool cube
+    }
+  });
+
 })();

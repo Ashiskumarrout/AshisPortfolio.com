@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -33,7 +33,21 @@
     <link rel="stylesheet" href="styile.css" />
   </head>
 
-  <body class="theme-luxury">
+  <body>
+    <!-- Premium Cube Loader -->
+    <div id="page-loader" class="page-loader">
+      <div class="cube-wrapper">
+        <div class="cube">
+          <div class="cube-side front"></div>
+          <div class="cube-side back"></div>
+          <div class="cube-side right"></div>
+          <div class="cube-side left"></div>
+          <div class="cube-side top"></div>
+          <div class="cube-side bottom"></div>
+        </div>
+      </div>
+    </div>
+    
     <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <div class="bg-orb orb-1"></div>
     <div class="bg-orb orb-2"></div>
@@ -69,6 +83,11 @@
               <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
               <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item ms-lg-2 d-flex align-items-center mt-2 mt-lg-0">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -81,10 +100,10 @@
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
-              <p class="kicker">Software Developer | Softech18</p>
+              <p class="kicker">Software Developer | HexaLearn Solutions</p>
               <h1 class="hero-title">
                 Ashis Kumar Rout
-                <span>Building premium web products from Odisha, India</span>
+                <span>Making custom software, web and mobile from Odisha, India</span>
               </h1>
               <p class="hero-copy">
                 I design and develop modern, conversion-focused websites and applications with strong architecture, premium UI, and measurable business impact.
@@ -116,13 +135,13 @@
           <div class="section-head" data-aos="fade-up">
             <h2>About Me</h2>
             <p>
-              I am a dedicated Full Stack Developer with practical industry experience in building scalable and responsive digital products.
+              I am a dedicated Full Stack Developer with practical industry experience in building both scalable web products and premium mobile applications.
             </p>
           </div>
 
           <div class="glass-card about-panel" data-aos="fade-up" data-aos-delay="100">
             <p>
-              Currently working as a Software Developer at Softech18, I have designed and delivered 30+ websites and e-commerce solutions using React.js, Laravel, PHP, WordPress, Shopify, and modern frontend technologies. I manage complete project lifecycles from planning to deployment and maintenance while ensuring performance, SEO, and business outcomes.
+              Currently working as a Software Developer at HexaLearn Solutions Private Limited. Not only do I build for the web, but I also specialize in cross-platform mobile development. I have designed and delivered 30+ websites and apps utilizing React.js, React Native, TypeScript, Laravel, PHP, WordPress, Shopify, and modern backend solutions like Supabase. I manage complete project lifecycles from planning to deployment.
             </p>
             <div class="about-highlights">
               <div>
@@ -146,56 +165,78 @@
         <div class="container">
           <div class="section-head" data-aos="fade-up">
             <h2>Skills</h2>
-            <p>Structured expertise across frontend, backend, databases, and professional tools.</p>
+            <p>Structured expertise across mobile, frontend, backend, databases, and professional tools.</p>
           </div>
 
           <div class="row g-4">
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <article class="glass-card skill-card h-100">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+              <article class="glass-card skill-card h-100 p-3">
                 <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Bootstrap</li>
-                  <li>Tailwind CSS</li>
+                <ul class="ps-3">
+                  <li>HTML5 & CSS3</li>
+                  <li>Bootstrap & Tailwind</li>
                   <li>React.js</li>
                   <li>JavaScript</li>
+                  <li>TypeScript</li>
                 </ul>
               </article>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <article class="glass-card skill-card h-100">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="50">
+              <article class="glass-card skill-card h-100 p-3">
+                <h3><i class="fa-solid fa-mobile-screen-button"></i> Mobile</h3>
+                <ul class="ps-3">
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>Cross-Platform UI</li>
+                  <li>Performance Tuning</li>
+                  <li>APK/AAB Deploy</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+              <article class="glass-card skill-card h-100 p-3">
                 <h3><i class="fa-solid fa-server"></i> Backend</h3>
-                <ul>
+                <ul class="ps-3">
                   <li>PHP</li>
                   <li>Laravel</li>
-                  <li>RESTful APIs</li>
+                  <li>REST APIs</li>
                   <li>WordPress</li>
                   <li>Shopify</li>
                 </ul>
               </article>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <article class="glass-card skill-card h-100">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+              <article class="glass-card skill-card h-100 p-3">
                 <h3><i class="fa-solid fa-database"></i> Database</h3>
-                <ul>
-                  <li>MySQL</li>
-                  <li>PostgreSQL</li>
+                <ul class="ps-3">
+                  <li>MySQL & PostgreSQL</li>
                   <li>MongoDB</li>
+                  <li>Supabase</li>
                   <li>Data Modeling</li>
                 </ul>
               </article>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <article class="glass-card skill-card h-100">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+              <article class="glass-card skill-card h-100 p-3">
                 <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
-                <ul>
+                <ul class="ps-3">
                   <li>Git & GitHub</li>
                   <li>cPanel</li>
                   <li>GoDaddy & Hostinger</li>
                   <li>Domain & DNS</li>
-                  <li>SEO Optimization</li>
+                  <li>SEO</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+              <article class="glass-card skill-card h-100 p-3">
+                <h3><i class="fa-solid fa-pen-nib"></i> Design</h3>
+                <ul class="ps-3">
+                  <li>Figma</li>
                   <li>Canva</li>
+                  <li>Prototyping</li>
+                  
+                  <li>UI/UX</li>
                 </ul>
               </article>
             </div>
@@ -210,56 +251,78 @@
             <p>Real-world delivery experience with measurable outcomes and international exposure.</p>
           </div>
 
-          <article class="glass-card experience-card" data-aos="fade-up" data-aos-delay="120">
-            <div class="experience-top">
-              <div>
-                <h3>Softech18</h3>
-                <p>Software Developer</p>
+            <article class="glass-card experience-card mb-4" data-aos="fade-up" data-aos-delay="120">
+              <div class="experience-top">
+                <div>
+                  <h3>HexaLearn Solutions Private Limited</h3>
+                  <p>Software Developer</p>
+                </div>
+                <span>April 2026 - Present</span>
               </div>
-              <span>March 2025 - Present</span>
-            </div>
-            <ul>
-              <li>Designed and developed modern responsive websites and web apps using React, PHP, Laravel, WordPress, and Shopify.</li>
-              <li>Built high-performance solutions with MySQL and PostgreSQL for reliable data and scalability.</li>
-              <li>Delivered SEO-friendly and fast WordPress experiences including a luxury travel platform.</li>
-              <li>Managed deployment, hosting, optimization, and long-term maintenance for production projects.</li>
-              <li>Successfully delivered 30+ client projects across events, healthcare, education, government, NGOs, and e-commerce.</li>
-              <li>Worked with international clients from India, USA, Australia, and Africa, including The Wedding Clicks, Safaricontinents, St. Xavier's High School, Next Level MMA, Magid Carpet, and Stradiasport.</li>
-            </ul>
-          </article>
-        </div>
+              <ul>
+                <li>Built a full e-commerce project featuring a comprehensive backend admin panel, secure login, and successful Stripe payment integration using Laravel, React, and TypeScript.</li>
+                <li>Designed and deployed a sophisticated Travel Web Application constructed with React and Laravel architectures.</li>
+                <li>Developed a Premium Expense Tracker mobile application entirely in React Native for high-performance mobile accessibility.</li>
+              </ul>
+            </article>
+
+            <article class="glass-card experience-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="experience-top">
+                <div>
+                  <h3>Softech 18</h3>
+                  <p>Software Developer</p>
+                </div>
+                <span>March 2025 - April 2026</span>
+              </div>
+              <ul>
+                <li>Designed and developed modern responsive websites and web apps using React, PHP, Laravel, WordPress, and Shopify.</li>
+                <li>Built high-performance solutions with MySQL and PostgreSQL for reliable data and scalability.</li>
+                <li>Delivered SEO-friendly and fast WordPress experiences including a luxury travel platform.</li>
+                <li>Managed deployment, hosting, optimization, and long-term maintenance for production projects.</li>
+                <li>Successfully delivered 30+ client projects across events, healthcare, education, government, NGOs, and e-commerce.</li>
+                <li>Worked with international clients from India, USA, Australia, and Africa, including The Wedding Clicks, Safaricontinents, St. Xavier's High School, Next Level MMA, Magid Carpet, and Stradiasport.</li>
+              </ul>
+            </article>
+          </div>
       </section>
 
       <section id="services" class="section-space">
         <div class="container">
           <div class="section-head" data-aos="fade-up">
             <h2>Services</h2>
-            <p>End-to-end digital solutions focused on quality, performance, and conversion.</p>
+            <p>End-to-end digital solutions focused on quality, performance, conversion, and creating custom software for web and mobile platforms.</p>
           </div>
 
           <div class="row g-4">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
               <article class="glass-card service-card h-100">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
                 <p>Custom business websites and web apps with clean architecture, responsive layouts, and scalable code.</p>
               </article>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+              <article class="glass-card service-card h-100">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Mobile App Development</h3>
+                <p>Premium cross-platform mobile applications meticulously built using React Native mapping custom UI requirements.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <article class="glass-card service-card h-100">
                 <i class="fa-solid fa-pen-ruler"></i>
                 <h3>UI/UX Design</h3>
                 <p>Modern user interfaces designed for intuitive navigation, stronger engagement, and premium visual identity.</p>
               </article>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <article class="glass-card service-card h-100">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <h3>E-commerce Development</h3>
                 <p>Conversion-focused WooCommerce and Shopify stores with secure checkout and optimized shopping flows.</p>
               </article>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
               <article class="glass-card service-card h-100">
                 <i class="fa-solid fa-chart-line"></i>
                 <h3>SEO Optimization</h3>
@@ -274,7 +337,7 @@
         <div class="container">
           <div class="section-head" data-aos="fade-up">
             <h2>Featured Projects</h2>
-            <p>Selected projects that demonstrate technical depth, performance focus, and product delivery.</p>
+            <p>Selected projects that demonstrate technical depth, performance focus, and product delivery, including mobile applications.</p>
           </div>
 
           <div class="row g-4">
@@ -324,6 +387,17 @@
 
             <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
               <article class="glass-card project-card h-100">
+                <div class="project-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Premium Expense Tracker App</h3>
+                <p>A sophisticated mobile application built with React Native and Expo featuring dynamic dashboards, spending breakdowns, local persistence, and dark mode.</p>
+                <div class="project-links">
+                  <a href="#contact">Request Demo</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
+              <article class="glass-card project-card h-100">
                 <div class="project-icon"><i class="fa-solid fa-building"></i></div>
                 <h3>VaWebHub Agency Website</h3>
                 <p>PHP-powered agency website with modern UI/UX, service-focused pages, and mobile-first structure.</p>
@@ -355,18 +429,13 @@
           </div>
 
           <div class="row g-4">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
               <article class="glass-card edu-card h-100">
                 <h3>MCA - ABIT under BPUT</h3>
                 <p>Completed in March 2025 with average CGPA of 8.30, including all semesters and final project.</p>
               </article>
             </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <article class="glass-card edu-card h-100">
-                <h3>B.Sc - Utkal University</h3>
-                <p>Regional Degree College, Rambag, Jajpur. Completed in 2022 with 80%.</p>
-              </article>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -413,12 +482,12 @@
 
           <div class="row g-4 align-items-stretch">
             <div class="col-lg-5" data-aos="fade-right">
-              <div class="glass-card contact-info h-100">
+              <div class="glass-card contact-info h-100 text-center">
                 <h3>Let's build something premium.</h3>
                 <p><i class="fa-solid fa-envelope"></i> <a href="mailto:routasis411@gmail.com">routasis411@gmail.com</a></p>
                 <p><i class="fa-solid fa-phone"></i> <a href="tel:+917008448569">+91 7008448569</a></p>
                 <p><i class="fa-solid fa-location-dot"></i> Odisha, India</p>
-                <div class="socials">
+                <div class="socials justify-content-center">
                   <a href="https://www.linkedin.com/in/ashis-rout" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                   <a href="https://github.com/Ashiskumarrout" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                   <a href="https://instagram.com/ashis5769" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
